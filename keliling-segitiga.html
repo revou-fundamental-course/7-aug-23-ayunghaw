@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Project</title>
+
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <header class="text-center">
+            <h1 class="mb-1">Welcome to Kamat</h1>
+            <p>Hai Sobat, Selamat datang di Kalkulator Matematika! <br> Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga</p>
+            <a href="/index.html"><button>Hitung Luas Segitiga</button></a>
+            <a href="#" ><button>Hitung Keliling Segitiga</button></a>
+            <hr>
+        </header>
+
+        <main>
+            <section>
+                <h1 class="text-center judul">Keliling Segitiga</h1>
+                <div class="text-center">
+                    <img src="/asset/segitiga.png" alt="">
+                </div>
+
+                <div>
+                    <p>Rumus keliling segitiga yaitu:</p>
+                    <p class="text-center"><b>K = S1 + S2 + S3</b></p>
+                    <p>
+                        Di mana: <br>
+                        K = Keliling <br>
+                        S1 = Sisi A <br>
+                        S2 = Sisi B <br>
+                        S3 = Sisi C
+                    </p>
+                </div>
+                <hr>
+            </section>
+            
+            <section>
+                <h2 class="text-center">Hitung Keliling Segitiga</h2>
+
+                <div class="input-section">
+                    <!-- <label for="sisia">Sisi A Segitiga</label> -->
+                    <input type="number" id="sisia" placeholder="Nilai Sisi A">
+    
+                    <!-- <label for="sisib">Sisi A Segitiga</label> -->
+                    <input type="number" id="sisib" placeholder="Nilai Sisi B">
+    
+                    <!-- <label for="sisic">Sisi C Segitiga</label> -->
+                    <input type="number" id="sisic" placeholder="Nilai Sisi C">
+                </div>
+
+                <section id="hasilkeliling"></section>
+    
+                <section class="text-center">
+                    <button id="hitungkeliling">Hitung</button>
+                </section>
+            </section>
+
+            <footer>
+                <p class="text-center">Developed by Wahyu Hidayat</p>
+            </footer>
+        </main>
+        
+        <script src="/js/keliling-segitiga.js"></script>
+    </body>
+</html>
