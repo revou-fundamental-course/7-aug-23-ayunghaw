@@ -8,28 +8,108 @@
         <title>Mini Coding Project</title>
     </head>
     <body>
-        <header>
-            <h1 class="text-center">Menghitung Luas Segitiga</h1>
+        <header class="text-center mb-2">
+            <h1 class="mb-1">Welcome to Kamat</h1>
+            <p>Hai Sobat, Selamat datang di Kalkulator Matematika! <br> Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga</p>
+            <a href="#luas" ><button>Hitung Luas Segitiga</button></a>
+            <a href="#keliling" ><button>Hitung Keliling Segitiga</button></a>
+            <hr>
         </header>
-
+        
         <main>
-            <section class="input-section">
-                <label for="alas">Alas Segitiga</label>
-                <input type="number" id="alas">
-
-                <label for="">Tinggi Segitiga</label>
-                <input type="number" id="tinggi">
-
+            <!-- menghitung luas segitiga -->
+            <div>
                 <section class="text-center">
-                    <button>Go To Hitung Keliling</button>
-                    <button id="hitung">Hitung</button>
+                    <h1 class="menu" id="luas">Luas Segitiga</h1>
+                    <!-- <h1 class="menu">Luas Segitiga</h1> -->
+                    <img src="/asset/segitiga.png" alt="">
+                </section>
+    
+                <section>
+                    <p>Rumus luas segitiga yaitu:</p>
+                    <p class="text-center"><b>L = 1/2 x a x t</b></p>
+                    <p>
+                        Di mana: <br>
+                        L = Luas <br>
+                        a = Panjang Alas <br>
+                        t = Tinggi
+                    </p>
+                </section>
+                
+                <section class="input-section">
+                    <h2 class="text-center">Hitung Luas Segitiga</h2>
+                    
+                    <!-- <label for="alas">Alas Segitiga (cm)</label> -->
+                    <input type="number" id="alas" placeholder="Nilai Alas">
+    
+                    <!-- <label for="">Tinggi Segitiga (cm)</label> -->
+                    <input type="number" id="tinggi" placeholder="Nilai Tinggi">
+                </section>
+                
+                <section id="outputl"></section>
+    
+                <section class="text-center">
+                    <button id="hluas">Hitung</button>
+                </section>
+    
+                <section class="text-end">
+                    <a href="#keliling" ><button>Hitung Keliling</button></a>
+                    <button id="reset" >Reset</button>
+                </section>
+            </div>
+            <!-- menghitung luas segitiga END -->
+
+            <hr>
+
+            <!-- menghitung keliling segitiga -->
+            <div>
+                <section class="text-center">
+                    <h1 class="menu" id="keliling">Keliling Segitiga</h1>
+                    <img src="/asset/segitiga.png" alt="">
+                </section>
+    
+                <section>
+                    <p>Rumus keliling segitiga yaitu:</p>
+                    <p class="text-center"><b>K = S1 + S2 + S3</b></p>
+                    <p>
+                        Di mana: <br>
+                        K = Keliling <br>
+                        S1 = Sisi A <br>
+                        S2 = Sisi B <br>
+                        S3 = Sisi C
+                    </p>
+                </section>
+                
+                <section class="input-section">
+                    <h2 class="text-center">Hitung Keliling Segitiga</h2>
+    
+                    <!-- <label for="sisia">Sisi A Segitiga</label> -->
+                    <input type="number" id="sisia" placeholder="Nilai Sisi A">
+    
+                    <!-- <label for="sisib">Sisi A Segitiga</label> -->
+                    <input type="number" id="sisib" placeholder="Nilai Sisi B">
+    
+                    <!-- <label for="sisic">Sisi C Segitiga</label> -->
+                    <input type="number" id="sisic" placeholder="Nilai Sisi C">
+                </section>
+                
+                <section id="outputk"></section>
+    
+                <section class="text-center">
+                    <button id="hkeliling">Hitung</button>
+                </section>
+    
+                <section class="text-end">
+                    <a href="#luas" ><button>Hitung Luas</button></a>
                     <button id="reset">Reset</button>
                 </section>
-            </section>
- 
-
-            <div id="output"></div>
+            </div>
+            <!-- menghitung keliling segitiga END -->
         </main>
+
+        <!-- <footer>
+            <p>Copyright by Wahyu Hidayat</p>
+        </footer> -->
 
         <script src="/js/script.js"></script>
     </body>
