@@ -3,6 +3,9 @@ const tinggi = document.getElementById('tinggi')
 const hitungluas = document.getElementById('hitungluas')
 const hasilluas = document.getElementById('hasilluas')
 
+let btnClear = document.querySelector('#reset');
+let inputs = document.querySelectorAll('input');
+
 // menghitung luas
 hitungluas.addEventListener('click', function() {
     let a = alas.value
@@ -16,4 +19,10 @@ hitungluas.addEventListener('click', function() {
         
         Jadi luas segitiganya adalah ${l}`
 })
+// END
+
+// reset
+btnClear.addEventListener('click',() => {
+    inputs.forEach(input => input.value = "")
+});
 // END

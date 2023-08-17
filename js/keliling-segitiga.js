@@ -3,6 +3,8 @@ const sisib = document.getElementById('sisib')
 const sisic = document.getElementById('sisic')
 const hitungkeliling = document.getElementById('hitungkeliling')
 const hasilkeliling = document.getElementById('hasilkeliling')
+let btnClear = document.querySelector('#reset');
+let inputs = document.querySelectorAll('input');
 
 // menghitung keliling
 hitungkeliling.addEventListener('click', function() {
@@ -18,4 +20,10 @@ hitungkeliling.addEventListener('click', function() {
         
         Jadi keliling segitiganya adalah ${k}`
 })
+// END
+
+// reset
+btnClear.addEventListener('click',() => {
+    inputs.forEach(input => input.value = "")
+});
 // END
